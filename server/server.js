@@ -1,12 +1,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
+const path = require('path');
 
 const app = express();
 
-app.use(bodyParser.json()); //check this line
+app.use(bodyParser.json());
 app.use(morgan('dev'));
 
+app.use(express.static(path.join(__dirname, '../client')));
 
 
 app.get('/api/test', (req,res) => {
