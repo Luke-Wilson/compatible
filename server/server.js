@@ -2,19 +2,18 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const path = require('path');
-
 const app = express();
+
+const routes = require('./routes/routes.js');
+
 
 app.use(bodyParser.json());
 app.use(morgan('dev'));
 
 app.use(express.static(path.join(__dirname, '../client')));
 
-
-app.get('/api/test', (req,res) => {
-  console.log(req.body);
-  res.send('GET received');
-});
+//connection to routes goes here
+require('./routes/routes.js')(app, express);
 
 
 const port = 3003;
