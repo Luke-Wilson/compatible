@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/Luke-Wilson/compatible/issues"
   },
-  "homepage": "https://github.com/Luke-Wilson/compatible#readme"
+  "homepage": "https://github.com/Luke-Wilson/compatible#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "morgan": "^1.8.1",
+    "nodemon": "^1.11.0"
+  }
 }
