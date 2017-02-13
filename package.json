@@ -1,0 +1,19 @@
+{
+  "name": "compatible",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luke-Wilson/compatible.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luke-Wilson/compatible/issues"
+  },
+  "homepage": "https://github.com/Luke-Wilson/compatible#readme"
+}
