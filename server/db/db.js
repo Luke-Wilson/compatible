@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const config = require('./config.js');
 
-var db = new Sequelize('compatible', config.username, config.password);
+var db = new Sequelize(config.dbUrl, config.username, config.password);
 module.exports = db;
 
 //models
