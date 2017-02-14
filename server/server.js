@@ -5,6 +5,7 @@ const path = require('path');
 const app = express();
 
 const routes = require('./routes/routes.js');
+const db = require('./db/db.js');
 
 
 app.use(bodyParser.json());
