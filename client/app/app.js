@@ -1,1 +1,4 @@
-angular.module('compatible', [])
+angular.module('compatible', [
+  'compatible.students',
+  'compatible.services'
+  ]);
