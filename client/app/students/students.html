@@ -1,4 +1,10 @@
 <div>
     <h1>Students</h1>
-    <p>This page demonstrates <span class="text-danger">nested</span> views.</p>
+    <p>Here is the list of current students</p>
+    <p>{{list}}</p>
+    <ul>
+      <li ng-repeat="student in list">{{student.firstname}} {{student.lastname}}</li>
+    </ul>
+
+    <button ng-click="getStudents()">get students</button>
 </div>
