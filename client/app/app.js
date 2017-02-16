@@ -17,6 +17,7 @@ angular.module('compatible', [
 
     .state('students', {
       url: '/students',
+      controller: 'StudentsController',
       templateUrl: '/app/students/students.html'
     });
 
